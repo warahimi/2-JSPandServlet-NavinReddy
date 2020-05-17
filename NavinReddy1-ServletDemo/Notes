@@ -33,3 +33,15 @@ Web Container, maps the URL to a specific servlet using web.xml
 We will use servlet at the server side to control the flow
 And we will use the JSP at client side for displaying data
 Servlet is simple Java program that runs in server and is capable of handling request and generating dynamic responses.
+
+
+HTTP (HyperText Transfer Protocol):
+the HTTP protocol we use has certain methods to work with
+Get(), Post(), Put(), Delete(), Option()
+we use Get() and Pos()
+Get(): When we want to fetch data from server we use Get reques
+Post(): when we want to put data to the server we use the post request
+
+By Defult it is a Get Request if we dont mention the type , the values goes on the address bar/ uses the URL to send data
+
+when we fetch data from server got for Get, and when you want to put/submit data to the server user Post
