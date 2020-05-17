@@ -1,0 +1,35 @@
+Introduction to Servlet:
+How Servlet works?
+A client sends a request to a server asking for some thing say for a page, 
+So this page can be static or dynamic. 
+Static means the page is already made .(we have a premade file/page that goes back to client upon request)
+Dynamic means the page will be created at run time : requested page doesn’t exist on server, since it is a dynamic request the goes to the Helper Application /Web Container . in this web containers we have Servlets. Servlets: are basically java files which can take the request from the client on the internet it can process the request / fetch the values and provides a response to the client in the format of html page.
+
+Dynamic requests goes to Web Container(Tomcate). Say asking for a page abc , but the page abc doesn’t already exist in the server, so that request asking for a unexisting abc page goes to Servlet(java classes that extends httpServlet).
+HttpServlet class provide us all the feature we need. It is able to take the request from server, process it, and send the response. The response is an html page that goes to client in the format of Response object.
+(as java programmer we don’t like .xml configurations, in Servlet 3.0 we got a new feature called Annotation) we can put annotations on our servlet, no need to configure xml files. We can do all the mapping with annotations.
+
+
+
+
+
+Inside our container we have a file web.xml (Deployment Descriptor), where we mention for which request which Servlet should be called. (mapping servlet to url pattern in web.xml file)
+ 
+Web Containers we can use: Appachi Tomcat, GlassFIsh, JBoss, WebSphere…v(App Servers)
+
+The URL we enter to access a webpage is request sent to the server. Server is a computer with multiple resources (mp3, pdf, html, video … files). The server processes the user request and send back the respond /feedback to the user (in the form of html).
+Client is nothing but a web brower , and server is nothing but tomcat, glssfish or …
+Respond is nothing but resources converted in the form of html sent back to the user
+
+Static VS Dynamic Page:
+Static: a client sends a request for a file already exist in the hard drive of server, the server process the request and find the file/resource and include it in html page and send it back to the user (resource is already pre-made in the server)
+We make all the pages in advance and put them in server. The same page will sent to all in static request
+Dynamic: the resource does not exist the server generate the resource at run time. And send it back to client in the form of response.
+Fe. If a user sends a request to pull list of student ..
+In dynamic request when server doesn’t find the resource , it directs the request to the Web Container, the web container send the request to specific Servlet (Java Class that extends HttpServlet). Inside the servlet we generate the resource . fe get the data from a database. And the servlet write the data into JSP, the jsp is sent to the server ,, the server take the jsp and sends it back to the user as response (JSP contains both HTL and Java code).
+So in the client side we iterate over the list of student and display it.
+Web Container, maps the URL to a specific servlet using web.xml
+
+We will use servlet at the server side to control the flow
+And we will use the JSP at client side for displaying data
+Servlet is simple Java program that runs in server and is capable of handling request and generating dynamic responses.

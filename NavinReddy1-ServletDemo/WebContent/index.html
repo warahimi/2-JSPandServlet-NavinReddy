@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+
+	<h1>First Servlet</h1><br>
+	
+	<form action="add"> <!-- This is how we send a request to server using form action --> <!-- add is the url, reques will sent to add url, we must create a servlet with add url to handle this request -->
+		First Number:<input type="text" name="n1"><br>
+		Second Number:<input type="text" name="n2"><br>
+		<input type="submit"> <!-- submits the form to server -->
+		<!-- when we submit request goes to tomcat asking for, tocate does have add, it refers to web.xml where 
+		we must have already configured the mapping to servelets for add url -->
+	
+	</form>
+	
+</body>
+</html>
