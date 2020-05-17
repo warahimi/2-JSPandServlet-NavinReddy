@@ -1,0 +1,3 @@
+calling a servlet from another servlet.
+suppose some complex logics are already done in other servlet and we need to use in our servlet, we can simply call
+other servlet in our servlet using requesdispatcher
